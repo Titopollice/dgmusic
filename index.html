@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Giovanni | Músico e Teórico</title>
+    <title>Daniel Geovanni | Músico e Teórico</title>
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome para ícones -->
@@ -178,7 +178,7 @@
         <div class="text-center z-10 reveal">
             <p class="text-brand-gold tracking-[0.3em] uppercase mb-4 text-sm md:text-base">Músico & Educador</p>
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
-                Daniel <br class="md:hidden" />Giovanni
+                Daniel <br class="md:hidden" /> Giovanni
             </h1>
             <p class="max-w-xl mx-auto text-gray-400 mb-8 text-lg">
                 Explorando as fronteiras entre a performance emocionante e a matemática dos sons.
@@ -203,14 +203,12 @@
     <section id="sobre" class="py-20 bg-slate-900/50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/2 reveal">
-                    <!-- Placeholder estilizado para foto -->
+                <div class="w-full md:w-1/2 reveal">                
                     <div class="relative w-full aspect-square max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl group">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold to-purple-600 opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                        <div class="w-full h-full bg-slate-800 flex items-center justify-center text-slate-600">
-                             <i class="fas fa-music text-9xl opacity-20"></i>
-                             <span class="absolute bottom-4 text-white/50 text-sm">Foto do Artista</span>
-                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold to-purple-600 opacity-20 group-hover:opacity-30 transition-opacity z-10"></div>
+                        <img src="./foto.png" 
+                             alt="Daniel Giovanni no Palco" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 reveal">
@@ -241,7 +239,7 @@
         </div>
     </section>
 
-    <!-- Teoria Musical Section (Interactive) -->
+    <!-- Teoria Musical Section (RESTAURADA) -->
     <section id="teoria" class="py-24 relative overflow-hidden">
         <!-- Background decorative element -->
         <div class="absolute top-0 right-0 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10"></div>
@@ -311,7 +309,7 @@
         </div>
     </section>
 
-    <!-- New Section: Lançamentos Recentes -->
+    <!-- New Section: Lançamentos Recentes (RESTAURADA) -->
     <section id="releases" class="py-20 bg-slate-900/50">
         <div class="container mx-auto px-6 reveal">
             <h2 class="text-4xl font-serif font-bold mb-12 text-white text-center">Lançamentos Recentes</h2>
@@ -367,6 +365,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeo em Destaque -->
+    <section id="destaque" class="py-24 bg-slate-900 relative overflow-hidden">
+        <!-- Efeito de fundo -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-slate-900 to-slate-900 -z-10"></div>
+        
+        <div class="container mx-auto px-6 reveal text-center">
+            <div class="mb-12">
+                <span class="text-brand-gold font-bold tracking-widest text-sm uppercase">Em Destaque</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mt-2 text-white">
+                    Exploração <span class="text-brand-gold">Microtonal</span>
+                </h2>
+            </div>
+            
+            <!-- Container do Vídeo (Responsivo 16:9) -->
+            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/uaNfj9pO27E" 
+                    title="TIME TO CALL MY FRIEND - COVER 31 EDO" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="mt-8 max-w-2xl mx-auto">
+                <h3 class="text-2xl text-white font-bold mb-3">Time To Call My Friend - Cover 31 EDO</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Uma performance utilizando o sistema <strong>31 EDO</strong> (31 divisões iguais da oitava), expandindo as possibilidades harmônicas além do padrão convencional de 12 notas.
+                </p>
+                <a href="https://www.youtube.com/watch?v=uaNfj9pO27E" target="_blank" class="inline-flex items-center gap-2 mt-4 text-brand-gold hover:text-white transition-colors">
+                    <i class="fab fa-youtube"></i> Assistir no YouTube
+                </a>
             </div>
         </div>
     </section>
